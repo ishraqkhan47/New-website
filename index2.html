@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Opus Technology Limited</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .slider-wrapper {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        .slider-fade {
+            position: relative;
+            height: 100%;
+        }
+        .slider-fade .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 5s ease-in-out;
+            object-fit: cover;
+            z-index: 1;
+        }
+        .slider-fade .slide.active {
+            opacity: 1;
+            z-index: 2;
+            transform: scale(1.05);
+        }
+        nav.navbar {
+            background-color: #f8f9fa;
+        }
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            color: #000;
+        }
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: #0d6efd;
+        }
+        section {
+            padding: 60px 0;
+        }
+        section.bg-light {
+            background-color: #f7f2f2;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .btn-info {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+            color: white;
+        }
+        .btn-info:hover {
+            background-color: #138496;
+            border-color: #117a8b;
+        }
+        img.img-fluid {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="image/OPUS.png" width="150" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">HR and Payroll Software</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Accounting Management System</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Restaurant Management System</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fintech Solution</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Arish: Islamic Digital Banking Solution</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Arish: Islamic Core Banking Solution</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Hashir: Islamic Microfinance Banking Solution</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Clients</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="slider-wrapper">
+        <div class="slider-fade">
+            <img src="https://opussystemsolutions.com/wp-content/uploads/slider/cache/c6fbcf4f08168936873c9b8f94c49819/WhatsApp-Image-2023-11-18-at-6.51.12-PM.jpg" class="slide active">
+            <img src="https://opussystemsolutions.com/wp-content/uploads/slider/cache/95050af95a3500c9607d950019d86538/WhatsApp-Image-2023-11-18-at-6.51.14-PM-1.jpg" class="slide">
+            <img src="https://opussystemsolutions.com/wp-content/uploads/slider/cache/3a86f5fbcad7add10c11f097a665928c/WhatsApp-Image-2023-11-18-at-6.51.14-PM.jpg" class="slide">
+            <img src="https://opussystemsolutions.com/wp-content/uploads/slider/cache/53e59e50c78f47549def66441ae0f1db/CRM.jpg" class="slide">
+        </div>
+    </div>
+
+    <section class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2>About Us</h2>
+                    <p>It is an <a href="https://opus-bd.com/">Opus Technology Bangladesh</a> sister concern and was established in 2023.</p>
+                    <p>OPUS System Solutions is a Malaysia-based software development company with a strong focus on Islamic Ethics. As a proud affiliate of OPUS Technology Limited, a distinguished software developer since 2012, our mission is to drive IT innovation and digital transformation on a global scale. We specialize in custom Software, Mobile Apps, Gaming, Animation, Web Development, and Artificial Intelligence.</p>
+                    <p>We believe in leveraging technology for the greater good and aim to integrate Islamic Ethics into our solutions. Our commitment goes beyond profit, focusing on delivering top-notch customer service and building lasting partnerships. With a rapidly growing team and expanding presence, OPUS System Solutions is dedicated to making a positive impact on society through ethical and innovative software solutions.</p>
+                    <button type="button" class="btn btn-info">Learn More!</button>
+                </div>
+                <div class="col-md-5">
+                    <img src="image/qqq.png" width="100%" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 5000);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
